@@ -185,7 +185,7 @@ export default function LandingPage() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
-  const ctaLabel = isLoggedIn ? 'Go to Dashboard →' : 'Start Practicing Free →';
+  const ctaLabel = isLoggedIn ? 'Go to Dashboard →' : 'Start your interview →';
 
   const reveal = (id, delay = 0) => ({
     'data-reveal-id': id,
@@ -334,7 +334,7 @@ export default function LandingPage() {
                 { label: 'Communication', val: 85, color: '#e2e8f0' },
                 { label: 'Structure', val: 78, color: '#c0c0c0' },
                 { label: 'Depth', val: 91, color: '#94a3b8' },
-                { label: 'Confidence', val: 82, color: '#10b981' },
+                { label: 'Confidence', val: 82, color: '#c0c0c0' },
               ].map((s) => (
                 <div key={s.label} style={{ marginBottom: 20 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
