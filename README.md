@@ -21,20 +21,16 @@ Next.js Client (App Router) ←→ Express API ←→ Postgres (Neon)
 ## Setup
 
 ```bash
-# 1. Clone and install
-git clone <repo-url> && cd Intervu
-npm install --prefix client && npm install --prefix server && npm install
+# 1. Clone & Install
+git clone https://github.com/ujjwalv01/IntervU.git && cd IntervU && npm run install:all
 
-# 2. Environment variables
-cp client/.env.example client/.env
-cp server/.env.example server/.env
-# Fill in: DATABASE_URL, JWT_SECRET, VAPI_PUBLIC_KEY, VAPI_PRIVATE_KEY, GROQ_API_KEY
-# Set NEXT_PUBLIC_VAPI_PUBLIC_KEY in client/.env
+# 2. Copy Environment Files (Fill in your keys in both files)
+cp client/.env.example client/.env && cp server/.env.example server/.env
 
-# 3. Run database migration
-npm run migrate --prefix server
+# 3. Initialize Database
+npm run migrate
 
-# 4. Start development servers
+# 4. Start Application
 npm run dev
 ```
 
