@@ -1,4 +1,4 @@
-# Intervu — AI Mock Interview Platform
+# Intervu - AI Mock Interview Platform
 
 Intervu is a voice-first AI mock interview platform that conducts real, adaptive conversations — not scripted quizzes. The AI interviewer (Aria) listens to your answers, follows up on vague points, pushes back when answers are weak, and acknowledges strong responses before moving on. After each session, you get a structured feedback report with scores, strengths, and areas for improvement.
 
@@ -12,10 +12,10 @@ Next.js Client (App Router) ←→ Express API ←→ Postgres (Neon)
   Groq (live conversation via Vapi)
 ```
 
-- **Frontend**: Next.js 15, JavaScript, Tailwind CSS v4 — dark-mode glassmorphism UI
-- **Backend**: Node.js + Express — REST API with JWT authentication
-- **Database**: PostgreSQL on Neon (serverless) — users, sessions, feedback reports
-- **Voice AI**: Vapi manages the full voice pipeline (STT → LLM → TTS) via browser WebRTC. The assistant is built as a "transient assistant" per session — no dashboard config needed.
+- **Frontend**: Next.js 15, JavaScript, Tailwind CSS v4 - dark-mode glassmorphism UI
+- **Backend**: Node.js + Express - REST API with JWT authentication
+- **Database**: PostgreSQL on Neon (serverless) - users, sessions, feedback reports
+- **Voice AI**: Vapi manages the full voice pipeline (STT → LLM → TTS) via browser WebRTC. The assistant is built as a "transient assistant" per session , no dashboard config needed.
 - **LLM**: Groq (`llama-3.3-70b-versatile`) — powers both the live conversational interview (via Vapi) and the post-interview feedback generation (direct API call).
 
 ## Setup
@@ -47,11 +47,11 @@ Voice is handled by Vapi with Groq as the LLM. Realistic all-in cost is roughly 
 
 ## Key Features
 
-- **Adaptive voice interviews** — Aria asks follow-up questions based on your actual answers, never from a fixed list
-- **4 interview types** — Behavioral, Technical, System Design, HR/Culture Fit
-- **Live transcript** — See the conversation as it happens
-- **Structured feedback** — Overall score, category breakdown, strengths, improvements, question-by-question evaluation
-- **Session history** — Dashboard with all past interviews and scores
+- **Adaptive voice interviews** - Aria asks follow-up questions based on your actual answers, never from a fixed list
+- **4 interview types** - Behavioral, Technical, System Design, HR/Culture Fit
+- **Live transcript** - See the conversation as it happens
+- **Structured feedback** - Overall score, category breakdown, strengths, improvements, question-by-question evaluation
+- **Session history** - Dashboard with all past interviews and scores
 
 ## Known Limitations / Future Improvements
 
